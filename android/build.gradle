@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Add the dependency for the Google services Gradle plugin
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}
+
+plugins {
+    // Apply the Google services plugin
+    // id 'com.google.gms.google-services'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    
+    // Ensure that the evaluation of ':app' is done for all subprojects
+    evaluationDependsOn(':app')
+}
+
+// Define the build directory
+def buildDirectory = '../build'
+
+// Configure the build directory for root project and subprojects
+rootProject.buildDir = buildDirectory
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+// Define the clean task
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41983427714",
+    "project_id": "oatuh-36439",
+    "storage_bucket": "oatuh-36439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41983427714:android:222a1b1c3f5a389f0b609b",
+        "android_client_info": {
+          "package_name": "com.example.tabletoys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbEYbR2sEiwvB446UqXkcPq__D5JyuobQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
