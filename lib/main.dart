@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabletoys/Models/Product_model.dart';
+import 'package:tabletoys/Models/channel_model.dart';
+import 'package:tabletoys/Models/product_model.dart';
 import 'package:tabletoys/Models/collection_model.dart';
 import 'package:tabletoys/Models/drawer_model.dart';
 import 'package:tabletoys/Screen/login_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
           primarySwatch: primary,
           visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: LoginScreen(),
+      home: channelBar(),
     );
   }
 }
